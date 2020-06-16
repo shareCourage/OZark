@@ -20,6 +20,11 @@ export default new Router({
                     meta: { title: '系统首页' }
                 },
                 {
+                    path: '/homeboard',
+                    component: () => import(/* webpackChunkName: "HomeBoard" */ '../components/page/HomeBoard.vue'),
+                    meta: { title: '系统首页' }
+                },
+                {
                     path: '/icon',
                     component: () => import(/* webpackChunkName: "icon" */ '../components/page/Icon.vue'),
                     meta: { title: '自定义图标' }

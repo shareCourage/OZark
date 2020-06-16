@@ -7,7 +7,7 @@
             background-color="#324157"
             text-color="#bfcbd9"
             active-text-color="#20a0ff"
-            unique-opened
+            unique-opened="false"
             router
         >
             <template v-for="item in items">
@@ -56,6 +56,68 @@ export default {
         return {
             collapse: false,
             items: [
+                {
+                    icon: 'el-icon-lx-home',
+                    title: '主页信息',
+                    subs: [
+                        {
+                            index: 'homeboard',
+                            title: '钱包概览'
+                        },
+                        {
+                            index: '3-2',
+                            title: '订单概览',
+                        },
+                        {
+                            index: 'upload',
+                            title: '寄送信息'
+                        },
+                        {
+                            index: 'upload',
+                            title: '代发咨询'
+                        },
+                        {
+                            index: 'upload',
+                            title: '技术支持'
+                        }
+                    ]
+                },
+                {
+                    icon: 'el-icon-lx-cascades',
+                    title: '用户中心',
+                    subs: [
+                        {
+                            index: 'form',
+                            title: '我的资料'
+                        },
+                        {
+                            index: '3-2',
+                            title: '授权管理',
+                        },
+                    ]
+                },
+                {
+                    icon: 'el-icon-lx-cascades',
+                    title: '我的钱包',
+                    subs: [
+                        {
+                            index: 'form',
+                            title: '余额'
+                        },
+                        {
+                            index: '3-2',
+                            title: '充值',
+                        },
+                        {
+                            index: '3-2',
+                            title: '充值明细',
+                        },
+                        {
+                            index: '3-2',
+                            title: '资金明细',
+                        }
+                    ]
+                },
                 {
                     icon: 'el-icon-lx-home',
                     index: 'dashboard',
